@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backGroundDark">#403f40</color>
+    <color name="darkText">#eee</color>
+    <color name="delete">#f44</color>
+    <color name="warning">#ff0</color>
+    <color name="append">#4b7</color>
+    <color name="update">#47f</color>
+
+</resources>

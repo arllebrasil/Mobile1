@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContatesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subscribeTitle" />
+
+            <EditText
+                android:id="@+id/nameContate"
+                style="@style/Inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <AutoCompleteTextView
+                android:id="@+id/emailTextEdit"
+                style="@style/Inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:completionHint="Email"/>
+
+            <EditText
+                android:id="@+id/whatsApp"
+                style="@style/Inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="WhatsApp"
+                android:inputType="textPersonName" />
+
+            <AutoCompleteTextView
+                android:id="@+id/idadeSpiner"
+                style="@style/Inputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="0"
+                android:hint="Idade" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/man" />
+
+                <RadioButton
+                    android:id="@+id/radioWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/woman" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/Btn.add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="applyOnClick"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/Btn.delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="cancelOnClick"
+                    android:text="@string/cancel" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

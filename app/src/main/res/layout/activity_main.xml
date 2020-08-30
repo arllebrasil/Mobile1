@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/themeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/themeSwich"
+                style="@style/Titles.mediun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showText="false"
+                android:text="@string/toggle_off" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/userBtn"
+                style="@style/Btn.update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToSoundPlayerOnClick"
+                android:text="Go To Sound Player" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/musicBtn"
+                style="@style/Btn.delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToContateClick"
+                android:text="@string/getUsers" />
+
+            <Button
+                android:id="@+id/tabBtn"
+                style="@style/Btn.add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToSoundTabsOnClick"
+                android:text="@string/getTabs" />
+
+            <Button
+                style="@style/Btn.update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToGridOnClick"
+                android:text="Go To Grid" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/usersListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAndroidApp</string>
+    <string name="toggle_on">Dark</string>
+    <string name="toggle_off">Ligth</string>
+    <string name="subscribeTitle">Susbiscribe</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <!--  Btns  -->
+    <string name="add">Create</string>
+    <string name="update">Alter</string>
+    <string name="delete">Remove</string>
+    <string name="getUsers">Go To Users</string>
+    <string name="getTabs">Go To Tabs</string>
+    <string name="cancel">Cacelar</string>
+    <!--    "Até 12 anos","13 a 18 anos","19 a 25 anos","Mais de 25 anos"-->
+    <string-array name="age_array">
+        <item>Até 12 anos</item>
+        <item>13 a 18 anos</item>
+        <item>19 a 25 anos</item>
+        <item>Mais de 25 anos</item>
+    </string-array>
+
+    <string-array name="email_array">
+        <item>arllebrasil@gmail.com</item>
+        <item>arllebrasil@hotmail.com</item>
+        <item>arllebrasil@alu.ufc.com</item>
+        <item>arllebrasil@outlook.com</item>
+    </string-array>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
